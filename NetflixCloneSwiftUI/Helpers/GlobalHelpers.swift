@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-let exampleVideoURL = URL(string: "https://www.youtube.com/watch?v=vjPoFyTUt8Q")!
+let exampleVideoURL = URL(string: "https://www.radiantmediaplayer.com/media/big-buck-bunny-360p.mp4")!
 
 let exampleImageURL = URL(string: "https://picsum.photos/300/160")!
 let exampleImageURL2 = URL(string: "https://picsum.photos/300/150")!
@@ -23,6 +23,15 @@ let exampleTrailer2 = Trailer(name: "The Hero's Journey", videoURL: exampleVideo
 let exampleTrailer3 = Trailer(name: "The Mysterious", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
 
 let exampleTrailers = [exampleTrailer1,exampleTrailer2,exampleTrailer3]
+
+let episode1 = Episode(name: "Beginnings and Endings", season: 1, episodeNumber: 1, thumbnailImageURLString: "https://picsum.photos/300/110", description: "Six months after disappearances, the police form a task force. In 2052, Jonas learns that most of Winden persihed in an aplocalyptic event", length: 54, videoURL: exampleVideoURL)
+let episode2 = Episode(name: "Dark Matter", season: 1, episodeNumber: 2, thumbnailImageURLString: "https://picsum.photos/300/110/", description: "Clausen and Charlotte interview Regina. The Stranger takes Hannah to 1987", length: 54, videoURL: exampleVideoURL)
+let episode3 = Episode(name: "Ghosts", season: 1, episodeNumber: 3, thumbnailImageURLString: "https://picsum.photos/300/110s", description: "In 1954, a missing Helge returns, but he'll only speak to Noah.", length: 56, videoURL: exampleVideoURL)
+let episode4 = Episode(name: "Beginnings and Endings", season: 2, episodeNumber: 1, thumbnailImageURLString: "https://picsum.photos/300/140", description: "Six months after disappearances, the police form a task force. In 2052, Jonas learns that most of Winden persihed in an aplocalyptic event", length: 54, videoURL: exampleVideoURL)
+let episode5 = Episode(name: "Dark Matter", season: 2, episodeNumber: 2, thumbnailImageURLString: "https://picsum.photos/300/131", description: "Clausen and Charlotte interview Regina. The Stranger takes Hannah to 1987", length: 54, videoURL: exampleVideoURL)
+let episode6 = Episode(name: "Ghosts", season: 2, episodeNumber: 3, thumbnailImageURLString: "https://picsum.photos/300/122", description: "In 1954, a missing Helge returns, but he'll only speak to Noah.", length: 56, videoURL: exampleVideoURL)
+
+let allExampleEpisodes = [episode1,episode2, episode3, episode4, episode5, episode6]
 
 let exampleMovie1 = Movie(
     id: UUID().uuidString,
