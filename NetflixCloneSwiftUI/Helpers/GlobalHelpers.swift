@@ -8,6 +8,22 @@
 import Foundation
 import SwiftUI
 
+let exampleVideoURL = URL(string: "https://www.youtube.com/watch?v=vjPoFyTUt8Q")!
+
+let exampleImageURL = URL(string: "https://picsum.photos/300/160")!
+let exampleImageURL2 = URL(string: "https://picsum.photos/300/150")!
+let exampleImageURL3 = URL(string: "https://picsum.photos/300/140")!
+
+var randomExampleImageURL: URL {
+    return [exampleImageURL, exampleImageURL2, exampleImageURL3].randomElement() ?? exampleImageURL
+}
+
+let exampleTrailer1 = Trailer(name: "Season 3 Trailer", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+let exampleTrailer2 = Trailer(name: "The Hero's Journey", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+let exampleTrailer3 = Trailer(name: "The Mysterious", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+
+let exampleTrailers = [exampleTrailer1,exampleTrailer2,exampleTrailer3]
+
 let exampleMovie1 = Movie(
     id: UUID().uuidString,
     name: "DARK",
@@ -19,7 +35,8 @@ let exampleMovie1 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators:"Baran bo Odan, Jantje Friese",
     cast:"Louis Hofmann, Oliver Masucci, Jordis Triebel",
-    moreLikeThisMovies: [exampleMovie3, exampleMovie2, exampleMovie4, exampleMovie5,exampleMovie6,exampleMovie7])
+    moreLikeThisMovies: [exampleMovie3, exampleMovie2, exampleMovie4, exampleMovie5,exampleMovie6,exampleMovie7],
+    trailers: exampleTrailers)
 let exampleMovie2 = Movie(
     id: UUID().uuidString,
     name: "Travelers",
@@ -31,7 +48,8 @@ let exampleMovie2 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators:"Baran bo Odan, Jantje Friese",
     cast:"Louis Hofmann, Oliver Masucci, Jordis Triebel",
-    moreLikeThisMovies: [])
+    moreLikeThisMovies: [],
+    trailers: exampleTrailers)
 let exampleMovie3 = Movie(
     id: UUID().uuidString,
     name: "Community",
@@ -43,7 +61,8 @@ let exampleMovie3 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators:"Baran bo Odan, Jantje Friese",
     cast:"Louis Hofmann, Oliver Masucci, Jordis Triebel",
-    moreLikeThisMovies: [])
+    moreLikeThisMovies: [],
+    trailers: exampleTrailers)
 let exampleMovie4 = Movie(
     id: UUID().uuidString,
     name: "Alone",
@@ -56,7 +75,8 @@ let exampleMovie4 = Movie(
     creators:"Baran bo Odan, Jantje Friese",
     cast:"Louis Hofmann, Oliver Masucci, Jordis Triebel",
     moreLikeThisMovies: [],
-    promotionHeadline: "New series coming soon")
+    promotionHeadline: "New series coming soon",
+    trailers: exampleTrailers)
 let exampleMovie5 = Movie(
     id: UUID().uuidString,
     name: "Hannibal",
@@ -68,7 +88,8 @@ let exampleMovie5 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators:"Baran bo Odan, Jantje Friese",
     cast:"Louis Hofmann, Oliver Masucci, Jordis Triebel",
-    moreLikeThisMovies: [exampleMovie3, exampleMovie2])
+    moreLikeThisMovies: [exampleMovie3, exampleMovie2],
+    trailers: exampleTrailers)
 let exampleMovie6 = Movie(
     id: UUID().uuidString,
     name: "After Life",
@@ -81,7 +102,8 @@ let exampleMovie6 = Movie(
     creators:"Baran bo Odan, Jantje Friese",
     cast:"Louis Hofmann, Oliver Masucci, Jordis Triebel",
     moreLikeThisMovies: [],
-    promotionHeadline: "Watch Season 6 Now")
+    promotionHeadline: "Watch Season 6 Now",
+    trailers: exampleTrailers)
 let exampleMovie7 = Movie(
     id: UUID().uuidString,
     name: "After Life",
@@ -94,7 +116,8 @@ let exampleMovie7 = Movie(
     creators:"Baran bo Odan, Jantje Friese",
     cast:"Louis Hofmann, Oliver Masucci, Jordis Triebel",
     moreLikeThisMovies: [],
-    promotionHeadline: "Watch Season 6 Now")
+    promotionHeadline: "Watch Season 6 Now",
+    trailers: exampleTrailers)
 
 var exampleMovies : [Movie] { [exampleMovie1,exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5,exampleMovie6].shuffled()
 }
