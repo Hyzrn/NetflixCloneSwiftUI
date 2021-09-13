@@ -26,7 +26,7 @@ let exampleTrailers = [exampleTrailer1,exampleTrailer2,exampleTrailer3]
 
 let episode1 = Episode(name: "Beginnings and Endings", season: 1, episodeNumber: 1, thumbnailImageURLString: "https://picsum.photos/300/110", description: "Six months after disappearances, the police form a task force. In 2052, Jonas learns that most of Winden persihed in an aplocalyptic event", length: 54, videoURL: exampleVideoURL)
 let episode2 = Episode(name: "Dark Matter", season: 1, episodeNumber: 2, thumbnailImageURLString: "https://picsum.photos/300/110/", description: "Clausen and Charlotte interview Regina. The Stranger takes Hannah to 1987", length: 54, videoURL: exampleVideoURL)
-let episode3 = Episode(name: "Ghosts", season: 1, episodeNumber: 3, thumbnailImageURLString: "https://picsum.photos/300/110s", description: "In 1954, a missing Helge returns, but he'll only speak to Noah.", length: 56, videoURL: exampleVideoURL)
+let episode3 = Episode(name: "Ghosts", season: 1, episodeNumber: 3, thumbnailImageURLString: "https://picsum.photos/300/111", description: "In 1954, a missing Helge returns, but he'll only speak to Noah.", length: 56, videoURL: exampleVideoURL)
 let episode4 = Episode(name: "Beginnings and Endings", season: 2, episodeNumber: 1, thumbnailImageURLString: "https://picsum.photos/300/140", description: "Six months after disappearances, the police form a task force. In 2052, Jonas learns that most of Winden persihed in an aplocalyptic event", length: 54, videoURL: exampleVideoURL)
 let episode5 = Episode(name: "Dark Matter", season: 2, episodeNumber: 2, thumbnailImageURLString: "https://picsum.photos/300/131", description: "Clausen and Charlotte interview Regina. The Stranger takes Hannah to 1987", length: 54, videoURL: exampleVideoURL)
 let episode6 = Episode(name: "Ghosts", season: 2, episodeNumber: 3, thumbnailImageURLString: "https://picsum.photos/300/122", description: "In 1954, a missing Helge returns, but he'll only speak to Noah.", length: 56, videoURL: exampleVideoURL)
@@ -40,11 +40,12 @@ let exampleMovie1 = Movie(
     categories: ["DysTopian","Exiting","Suspenseful","Sci-Fi TV"],
     year: 2020,
     rating: "TV-MA",
-    numberOfSeasons: 1,
+    numberOfSeasons: 2,
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators:"Baran bo Odan, Jantje Friese",
     cast:"Louis Hofmann, Oliver Masucci, Jordis Triebel",
     moreLikeThisMovies: [exampleMovie3, exampleMovie2, exampleMovie4, exampleMovie5,exampleMovie6,exampleMovie7],
+    episodes: allExampleEpisodes,
     trailers: exampleTrailers)
 let exampleMovie2 = Movie(
     id: UUID().uuidString,

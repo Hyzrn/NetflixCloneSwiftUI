@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Episodes: View {
+struct EpisodesView: View {
     var episodes: [Episode]
     
     @Binding var showSeasonPicker: Bool
@@ -26,7 +26,7 @@ struct Episodes: View {
                     showSeasonPicker = true
                 }, label: {
                     Group {
-                        Text("Season 1")
+                        Text("Season \(selectedSeason)")
                         Image(systemName: "chevron.down")
                     }
                     .font(.system(size:16))
@@ -41,8 +41,10 @@ struct Episodes: View {
             ForEach(getEpisodes(forSeason: selectedSeason)) { episode in
                 VStack(alignment:.leading) {
                     HStack {
-                        VideoPreviewImage(imageURL: episode.videoURL, videoURL: episode.thumbnailURL)
+                        VideoPreviewImage(imageURL: episode.thumbnailURL, videoURL: episode.videoURL)
                             .frame(width: 120, height: 70)
+                            .clipped()
+                        
                         VStack(alignment:.leading) {
                             Text("\(episode.episodeNumber). \(episode.name)")
                                 .font(.system(size: 16))
@@ -59,6 +61,7 @@ struct Episodes: View {
                     Text(episode.description)
                         .font(.system(size: 13))
                         .lineLimit(3)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
                 .padding(.bottom, 20)
             }
@@ -75,7 +78,7 @@ struct Episodes_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            Episodes(episodes: allExampleEpisodes, showSeasonPicker: .constant(false), selectedSeason: .constant(1))
+            EpisodesView(episodes: allExampleEpisodes, showSeasonPicker: .constant(false), selectedSeason: .constant(1))
         }
     }
 }

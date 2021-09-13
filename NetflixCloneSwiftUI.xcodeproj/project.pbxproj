@@ -28,7 +28,7 @@
 		BDE400AB26E4DC0B00802685 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE400AA26E4DC0B00802685 /* TopMoviePreview.swift */; };
 		BDE400AD26E4E16B00802685 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE400AC26E4E16B00802685 /* SmallVerticalButton.swift */; };
 		BDE400AF26E4E66700802685 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE400AE26E4E66700802685 /* PlayButton.swift */; };
-		BDEA5E3D26EE4ADF00482012 /* Episodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEA5E3C26EE4ADF00482012 /* Episodes.swift */; };
+		BDEA5E3D26EE4ADF00482012 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEA5E3C26EE4ADF00482012 /* EpisodesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +54,7 @@
 		BDE400AA26E4DC0B00802685 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		BDE400AC26E4E16B00802685 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 		BDE400AE26E4E66700802685 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
-		BDEA5E3C26EE4ADF00482012 /* Episodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episodes.swift; sourceTree = "<group>"; };
+		BDEA5E3C26EE4ADF00482012 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 				BD699BE026EE36700042507B /* TrailerList.swift */,
 				BD10F19926EE23AF009FB9B5 /* MovieDetail.swift */,
 				BD10F19C26EE2430009FB9B5 /* MoreLikeThis.swift */,
-				BDEA5E3C26EE4ADF00482012 /* Episodes.swift */,
+				BDEA5E3C26EE4ADF00482012 /* EpisodesView.swift */,
 			);
 			name = MovieDetail;
 			path = ../MovieDetail;
@@ -251,7 +251,7 @@
 				BD7F1A9826ECBE09005DDAC1 /* Episode.swift in Sources */,
 				BD6174BC26E397F4000A07E8 /* HomeView.swift in Sources */,
 				BD6174C726E39CDF000A07E8 /* HomeVM.swift in Sources */,
-				BDEA5E3D26EE4ADF00482012 /* Episodes.swift in Sources */,
+				BDEA5E3D26EE4ADF00482012 /* EpisodesView.swift in Sources */,
 				BD699BDF26EE33040042507B /* VideoPreviewImage.swift in Sources */,
 				BD6174AF26E39533000A07E8 /* ContentView.swift in Sources */,
 				BD6174C126E399CD000A07E8 /* Movie.swift in Sources */,
