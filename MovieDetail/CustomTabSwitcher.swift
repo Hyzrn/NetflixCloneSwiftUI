@@ -14,8 +14,8 @@ struct CustomTabSwitcher: View {
     var tabs: [CustomTab]
     var movie: Movie
     
-    @Binding  var showSeasonPicker: Bool
-    @Binding  var selectedSeason: Int
+    @Binding var showSeasonPicker: Bool
+    @Binding var selectedSeason: Int
     
     
     func widthForTab(_ tab: CustomTab) -> CGFloat {
