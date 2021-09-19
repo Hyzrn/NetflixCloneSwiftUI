@@ -117,7 +117,7 @@ let exampleMovie6 = Movie(
 let exampleMovie7 = Movie(
     id: UUID().uuidString,
     name: "After Life",
-    thumbnailURL: URL(string: "https://picsum.photos/200/305")!,
+    thumbnailURL: URL(string: "https://picsum.photos/200/306")!,
     categories: ["DysTopian","Exiting","Suspenseful","Sci-Fi TV"],
     year: 2020,
     rating: "TV-MA",
