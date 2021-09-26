@@ -52,6 +52,7 @@ let exampleMovie2 = Movie(
     name: "Travelers",
     thumbnailURL: URL(string: "https://picsum.photos/200/301")!,
     categories: ["DysTopian","Exiting","Suspenseful","Sci-Fi TV"],
+    genre: .action,
     year: 2020,
     rating: "TV-MA",
     numberOfSeasons: 2,
