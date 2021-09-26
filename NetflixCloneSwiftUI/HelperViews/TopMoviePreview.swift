@@ -50,7 +50,7 @@ struct TopMoviePreview: View {
                         
                     }
                     Spacer()
-                }.padding(.vertical,5)
+                }.padding(.vertical,14)
             }
             .background(
                 LinearGradient.blackOpacityGradient
