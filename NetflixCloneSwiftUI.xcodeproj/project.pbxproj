@@ -26,6 +26,9 @@
 		BD699BE126EE36700042507B /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD699BE026EE36700042507B /* TrailerList.swift */; };
 		BD7F1A9826ECBE09005DDAC1 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7F1A9726ECBE09005DDAC1 /* Episode.swift */; };
 		BD7F1A9A26ECD767005DDAC1 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7F1A9926ECD767005DDAC1 /* CustomTabSwitcher.swift */; };
+		BD989905271AF0E300B526AB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD989904271AF0E300B526AB /* SearchView.swift */; };
+		BD989907271AF17F00B526AB /* SearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD989906271AF17F00B526AB /* SearchVM.swift */; };
+		BD989909271AF56100B526AB /* GenerateMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD989908271AF56100B526AB /* GenerateMovies.swift */; };
 		BDC8703D27088677005699B7 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC8703C27088677005699B7 /* SearchBar.swift */; };
 		BDC8704027088821005699B7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC8703F27088821005699B7 /* Colors.swift */; };
 		BDE400AB26E4DC0B00802685 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE400AA26E4DC0B00802685 /* TopMoviePreview.swift */; };
@@ -55,6 +58,9 @@
 		BD699BE026EE36700042507B /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
 		BD7F1A9726ECBE09005DDAC1 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		BD7F1A9926ECD767005DDAC1 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
+		BD989904271AF0E300B526AB /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		BD989906271AF17F00B526AB /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
+		BD989908271AF56100B526AB /* GenerateMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateMovies.swift; sourceTree = "<group>"; };
 		BDC8703C27088677005699B7 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		BDC8703F27088821005699B7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		BDE400AA26E4DC0B00802685 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
@@ -176,6 +182,7 @@
 			children = (
 				BD6174C426E39A6F000A07E8 /* GlobalHelpers.swift */,
 				BDC8703F27088821005699B7 /* Colors.swift */,
+				BD989908271AF56100B526AB /* GenerateMovies.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -183,7 +190,9 @@
 		BDC8703E2708867C005699B7 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				BD989906271AF17F00B526AB /* SearchVM.swift */,
 				BDC8703C27088677005699B7 /* SearchBar.swift */,
+				BD989904271AF0E300B526AB /* SearchView.swift */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -268,6 +277,7 @@
 				BD699BDA26EE2D4B0042507B /* Trailer.swift in Sources */,
 				BD7F1A9826ECBE09005DDAC1 /* Episode.swift in Sources */,
 				BD6174BC26E397F4000A07E8 /* HomeView.swift in Sources */,
+				BD989909271AF56100B526AB /* GenerateMovies.swift in Sources */,
 				BD6174C726E39CDF000A07E8 /* HomeVM.swift in Sources */,
 				BDEA5E3D26EE4ADF00482012 /* EpisodesView.swift in Sources */,
 				BD699BDF26EE33040042507B /* VideoPreviewImage.swift in Sources */,
@@ -276,10 +286,12 @@
 				BDE400AB26E4DC0B00802685 /* TopMoviePreview.swift in Sources */,
 				BD6174C326E39A21000A07E8 /* StandartHomeMovie.swift in Sources */,
 				BD10F19A26EE23AF009FB9B5 /* MovieDetail.swift in Sources */,
+				BD989905271AF0E300B526AB /* SearchView.swift in Sources */,
 				BD10F19D26EE2430009FB9B5 /* MoreLikeThis.swift in Sources */,
 				BD6174AD26E39533000A07E8 /* NetflixCloneSwiftUIApp.swift in Sources */,
 				BDC8703D27088677005699B7 /* SearchBar.swift in Sources */,
 				BD0233E326F7614A006AB0E8 /* HomeStack.swift in Sources */,
+				BD989907271AF17F00B526AB /* SearchVM.swift in Sources */,
 				BD699BE126EE36700042507B /* TrailerList.swift in Sources */,
 				BD7F1A9A26ECD767005DDAC1 /* CustomTabSwitcher.swift in Sources */,
 				BDE400AD26E4E16B00802685 /* SmallVerticalButton.swift in Sources */,
