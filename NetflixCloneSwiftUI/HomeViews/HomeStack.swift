@@ -19,7 +19,8 @@ struct HomeStack: View {
             VStack {
                 HStack {
                     Text(category)
-                        .font(.title3).bold()
+                        .font(.title3)
+                        .bold()
                     Spacer()
                 }
                 ScrollView(.horizontal, showsIndicators: false) {
