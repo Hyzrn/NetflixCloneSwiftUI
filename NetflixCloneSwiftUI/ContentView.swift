@@ -28,22 +28,22 @@ struct ContentView: View {
                     Text("Search")
                 }.tag(1)
             
-            Text("Coming Soon")
+           ComingSoon()
                 .tabItem {
                     Image(systemName: "play.rectangle")
-                    Text("2")
+                    Text("Coming Soon")
                 }.tag(2)
             
             Text("Downloads")
                 .tabItem {
                     Image(systemName: "arrow.down.to.line.alt")
-                    Text("2")
+                    Text("Downloads")
                 }.tag(3)
             
             Text("More")
                 .tabItem {
                     Image(systemName: "equal")
-                    Text("2")
+                    Text("More")
                 }.tag(4)
         }.accentColor(.white)
     }

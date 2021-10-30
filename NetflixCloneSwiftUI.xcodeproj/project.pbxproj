@@ -22,6 +22,8 @@
 		BD6174C326E39A21000A07E8 /* StandartHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6174C226E39A21000A07E8 /* StandartHomeMovie.swift */; };
 		BD6174C526E39A6F000A07E8 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6174C426E39A6F000A07E8 /* GlobalHelpers.swift */; };
 		BD6174C726E39CDF000A07E8 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6174C626E39CDF000A07E8 /* HomeVM.swift */; };
+		BD663453272D425C0077195D /* ComingSoonVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD663452272D425C0077195D /* ComingSoonVM.swift */; };
+		BD663455272D48660077195D /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD663454272D48660077195D /* TrackableScrollView.swift */; };
 		BD699BDA26EE2D4B0042507B /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD699BD926EE2D4B0042507B /* Trailer.swift */; };
 		BD699BDC26EE2E6F0042507B /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD699BDB26EE2E6F0042507B /* SwiftUIVideoView.swift */; };
 		BD699BDF26EE33040042507B /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD699BDE26EE33040042507B /* VideoPreviewImage.swift */; };
@@ -59,6 +61,8 @@
 		BD6174C226E39A21000A07E8 /* StandartHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartHomeMovie.swift; sourceTree = "<group>"; };
 		BD6174C426E39A6F000A07E8 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		BD6174C626E39CDF000A07E8 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		BD663452272D425C0077195D /* ComingSoonVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonVM.swift; sourceTree = "<group>"; };
+		BD663454272D48660077195D /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
 		BD699BD926EE2D4B0042507B /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Trailer.swift; path = NetflixCloneSwiftUI/Models/Trailer.swift; sourceTree = SOURCE_ROOT; };
 		BD699BDB26EE2E6F0042507B /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
 		BD699BDE26EE33040042507B /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
@@ -216,6 +220,8 @@
 				BDCD6D5C272C24360091B7C1 /* ComingSoon.swift */,
 				BDCD6D5F272C249C0091B7C1 /* NotificationBar.swift */,
 				BDCD6D61272C28BB0091B7C1 /* ComingSoonRow.swift */,
+				BD663452272D425C0077195D /* ComingSoonVM.swift */,
+				BD663454272D48660077195D /* TrackableScrollView.swift */,
 			);
 			path = ComingSoon;
 			sourceTree = "<group>";
@@ -302,6 +308,7 @@
 				BD6174BC26E397F4000A07E8 /* HomeView.swift in Sources */,
 				BD989909271AF56100B526AB /* GenerateMovies.swift in Sources */,
 				BD6174C726E39CDF000A07E8 /* HomeVM.swift in Sources */,
+				BD663455272D48660077195D /* TrackableScrollView.swift in Sources */,
 				BDCD6D5D272C24360091B7C1 /* ComingSoon.swift in Sources */,
 				BD5085DE271C34CA0019A790 /* PopularMovieView.swift in Sources */,
 				BDEA5E3D26EE4ADF00482012 /* EpisodesView.swift in Sources */,
@@ -319,6 +326,7 @@
 				BD0233E326F7614A006AB0E8 /* HomeStack.swift in Sources */,
 				BD989907271AF17F00B526AB /* SearchVM.swift in Sources */,
 				BD699BE126EE36700042507B /* TrailerList.swift in Sources */,
+				BD663453272D425C0077195D /* ComingSoonVM.swift in Sources */,
 				BDCD6D60272C249C0091B7C1 /* NotificationBar.swift in Sources */,
 				BD7F1A9A26ECD767005DDAC1 /* CustomTabSwitcher.swift in Sources */,
 				BD5085E0271C403E0019A790 /* SearchResultGrid.swift in Sources */,
